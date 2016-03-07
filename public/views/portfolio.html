@@ -28,18 +28,54 @@
         </div>
     </div>
 
-
     <div class="portfolio-header-div dark-background-div header-position-right-div">
         Why would heavy metal ever go away?
         <div class="italic-quote-div">-Scott Ian</div>
     </div>
 
     <div parallax-background class="parallax-background tuskaBackground" parallax-ratio="0.3">
+        <div id="tuskaCarousel" class="carousel slide" data-interval="7000" data-pause="hover" data-wrap="false">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li class="item1 active" data-target="#tuskaCarousel" data-slide-to="0"></li>
+                <li class="item2" data-target="#tuskaCarousel" data-slide-to="1"></li>
+                <li class="item3" data-target="#tuskaCarousel" data-slide-to="2"></li>
+                <li class="item4" data-target="#tuskaCarousel" data-slide-to="3"></li>
+                <li class="item4" data-target="#tuskaCarousel" data-slide-to="4"></li>
+            </ol>
 
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="tuska-carousel-img-size tuskaSchedule"></div>
+                </div>
 
+                <div class="item">
+                    <div class="tuska-carousel-img-size tuskaScheduleReminder"></div>
+                </div>
 
+                <div class="item">
+                    <div class="tuska-carousel-img-size tuskaReminder"></div>
+                </div>
+
+                <div class="item">
+                    <div class="tuska-carousel-img-size tuskaPracticalities"></div>
+                </div>
+
+                <div class="item">
+                    <div class="tuska-carousel-img-size tuskaInfo"></div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control arrow-control-area" href="" ng-click="slide('prev')" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a class="right carousel-control arrow-control-area" ng-click="slide('next')" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
     </div>
-
 
     <div class="portfolio-header-div indigo-background-div header-position-right-div">
         Recently, I've started to train 3D modelling
@@ -67,7 +103,6 @@
         Donec placerat leo sit amet velit. Vestibulum id justo ut vitae massa. Proin in dolor mauris consequat aliquam.
         Donec ipsum, vestibulum ullamcorper venenatis augue.
     </div>
-
 
 </div>
 <!--</div>-->

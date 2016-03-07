@@ -5,18 +5,18 @@ body {
     font-size: 16px;
 }
 
-.navbar-default.navigation-position{
- position: fixed;
- width: 100%;
- z-index: 100;
- box-shadow: 2px 2px 15px #e0e0e0;
- margin-top:-50px;
+.navbar-default.navigation-position {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 2px 2px 15px #e0e0e0;
+    margin-top: -50px;
 }
 
 .visible-div {
     font-family: Roboto;
     font-size: 30px;
-   background-color: white;
+    background-color: white;
 }
 
 .portfolio-header-div {
@@ -34,39 +34,39 @@ body {
     padding: 50px;
 }
 
-.italic-quote-div{
-    font-weight:100;
+.italic-quote-div {
+    font-weight: 100;
     font-style: italic;
     font-size: 30px;
 }
 
 .header-position-div {
-   padding: 70px;
-   margin-top: 50px;
+    padding: 70px;
+    margin-top: 50px;
 }
 
 .dark-background-div {
-   background-color:#212121;
+    background-color: #212121;
 }
 
-.teal-background-div{
-    background-color:#004d40;
+.teal-background-div {
+    background-color: #004d40;
 }
 
-.indigo-background-div{
-    background-color:#1a237e;
+.indigo-background-div {
+    background-color: #1a237e;
 }
 
-.white-background-div{
-    background-color:white;
+.white-background-div {
+    background-color: white;
 }
 
 .header-position-right-div {
-   padding: 70px;
-   text-align: right;
+    padding: 70px;
+    text-align: right;
 }
 
-.analyzer-caption-div{
+.analyzer-caption-div {
     float: right;
     margin: 120px 60px 0 0;
     width: 60px;
@@ -75,73 +75,116 @@ body {
     border: 1px solid #29b6f6;
 }
 
-.analyzer-caption-div span.glyphicon-chevron-left{
-        position:relative;
-        left: 17%;
-        top: 17%;
-        font-size: 36px;
-        font-weight: 200;
-    }
+.analyzer-caption-div span.glyphicon-chevron-left {
+    position: relative;
+    left: 17%;
+    top: 17%;
+    font-size: 36px;
+    font-weight: 200;
+}
 
-.stt-caption-div{
+.stt-caption-div {
     float: right;
     margin: 0 60px 0 0;
 }
 
-.stt-caption-div span.glyphicon-chevron-down{
-        position:relative;
-        left: 22%;
-        top: 22%;
-        font-size: 36px;
-        font-weight: 200;
-    }
+.stt-caption-div span.glyphicon-chevron-down {
+    position: relative;
+    left: 22%;
+    top: 22%;
+    font-size: 36px;
+    font-weight: 200;
+}
 
-#analyzerCaptionText{
+#analyzerCaptionText {
     opacity: 0;
 }
 
-#analyzerGlyph{
+#analyzerGlyph {
     opacity: 1;
 }
 
-.portfolio-text-div{
+.portfolio-text-div {
     font-family: Roboto, sans-serif;
     font-weight: 300;
-    font-size: 30px;
-    color: black; 
-    display: none; 
-    text-align: center; 
+    font-size: 26px;
+    color: black;
+    display: none;
+    text-align: center;
     position: relative;
     top: 40%;
 }
 
+/*CAROUSEL STYLES*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
+
+.arrow-control-area{
+    margin-bottom: -50px;
+}
 
 /*PARALLAX STUFF*/
 .parallax {
-  position:absolute;
-  left: 0;
-  top: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
+
 .parallax-background {
-  background-attachment: fixed;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  height: 800px;
-  position: relative;
+    background-attachment: fixed;
+    /*background-position: 50% 0;*/
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
 }
 
 .analyzerFront {
-  background-image: url(../images/analyzerFront.png);
+    background-image: url(../images/analyzerFront.png);
 }
 
 .sttCompilation {
-  background-image: url(../images/sttCompilation.png);
+    background-image: url(../images/sttCompilation.png);
 }
 
 .modellingCompilation {
-  background-image: url(../images/ModellingSet.png);
+    background-image: url(../images/ModellingSet.png);
 }
 
 .tuskaBackground {
     background-image: url(../images/tuska_background.png);
+}
+
+.tuska-carousel-img-size {
+    width: 373px;
+    height: 700px;
+    background: no-repeat center top;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tuskaInfo {
+    background-image: url(../images/tuska_info.png);
+}
+
+.tuskaPracticalities {
+    background-image: url(../images/tuska_practicalities.png);
+}
+
+.tuskaReminder {
+    background-image: url(../images/tuska_reminder.png);
+}
+
+.tuskaSchedule {
+    background-image: url(../images/tuska_schedule.png);
+}
+
+.tuskaScheduleReminder {
+    background-image: url(../images/tuska_schedule_reminder.png);
 }
