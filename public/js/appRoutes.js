@@ -4,9 +4,14 @@
 
        .when('/',
              {
-                 controller: 'IntroductionController',
-                 templateUrl: 'views/introduction.html'
+                 controller: 'PortfolioController',
+                 templateUrl: 'views/portfolio.html'
              })
+        .when('/introduction',
+            {
+                controller: 'IntroductionController',
+                templateUrl: 'views/introduction.html'
+            })
          .when('/projects',
              {
                  controller: 'ProjectsController',

@@ -1,13 +1,12 @@
-<!--<div class="container">-->
-
 <div>
 
     <div class="portfolio-header-div header-position-div dark-background-div">
         Here are some of my previous work
     </div>
 
-    <div parallax-background class="parallax-background analyzerFront" parallax-ratio="0.3">
-        <div data-ng-click="animateAnalyzerCaption()" id="analyzerCaptionBlock" class="analyzer-caption-div">
+    <!--Analyzer parallax-->
+    <div parallax-background class="parallax-background analyzerFront hidden-sm hidden-xs" parallax-ratio="0.3">
+        <div data-ng-click="animateAnalyzerCaption()" id="analyzerCaptionBlock" class="portfolio-caption-div">
             <span id="analyzerGlyph" class="glyphicon glyphicon-chevron-left"></span>
             <div id="analyzerCaptionText" class="portfolio-text-div">
                 Front view of a clinical chemistry analyzer user interface.
@@ -15,12 +14,22 @@
         </div>
     </div>
 
+    <!--analyzer mobile-->
+    <div class="mobile-background analyzerFront visible-xs-block visible-sm-block">
+        <div class="mobile-caption-div">
+            <div class="portfolio-text-div mobile-caption-text">
+                Front view of a clinical chemistry analyzer user interface.
+            </div>
+        </div>
+    </div>
+
+    <!--IoT-->
     <div class="portfolio-header-div teal-background-div header-position-right-div">
         Developing user interface for Microsoft IoT platform is not a problem
     </div>
 
-    <div parallax-background class="parallax-background sttCompilation" parallax-ratio="0.3">
-        <div data-ng-click="animateSttCaption()" id="sttCaptionBlock" class="analyzer-caption-div stt-caption-div">
+    <div parallax-background class="parallax-background parallax-iot-background sttCompilation hidden-sm hidden-xs" parallax-ratio="0.3">
+        <div data-ng-click="animateSttCaption()" id="sttCaptionBlock" class="portfolio-caption-div stt-caption-div">
             <span id="sttGlyph" class="glyphicon glyphicon-chevron-down"></span>
             <div id="sttCaptionText" class="portfolio-text-div">
                 Clinical chemistry sample pre-handling station UI
@@ -28,13 +37,24 @@
         </div>
     </div>
 
+    <!--IoT mobile-->
+    <div class="mobile-background sttCompilation visible-xs-block visible-sm-block">
+        <div class="mobile-caption-div">
+            <div class="portfolio-text-div mobile-caption-text">
+                Clinical chemistry sample pre-handling station UI
+            </div>
+        </div>
+    </div>
+
+    <!--TUSKA 2012-->
     <div class="portfolio-header-div dark-background-div header-position-right-div">
         Why would heavy metal ever go away?
         <div class="italic-quote-div">-Scott Ian</div>
     </div>
 
-    <div parallax-background class="parallax-background tuskaBackground" parallax-ratio="0.3">
-        <div id="tuskaCarousel" class="carousel slide" data-interval="7000" data-pause="hover" data-wrap="false">
+    <div parallax-background class="parallax-background parallax-background-tuska tuskaBackground" parallax-ratio="0.3">
+
+        <div id="tuskaCarousel" class="carousel slide" data-interval="7000" data-pause="hover">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li class="item1 active" data-target="#tuskaCarousel" data-slide-to="0"></li>
@@ -68,15 +88,18 @@
             </div>
 
             <!-- Left and right controls -->
-            <a class="left carousel-control arrow-control-area" href="" ng-click="slide('prev')" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <a class="left carousel-control arrow-control-area" href="" ng-click="slide('prev')" role="button"
+               data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left carousel-glyph-size" aria-hidden="true"></span>
             </a>
-            <a class="right carousel-control arrow-control-area" ng-click="slide('next')" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <a class="right carousel-control arrow-control-area" ng-click="slide('next')" role="button"
+               data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right carousel-glyph-size" aria-hidden="true"></span>
             </a>
         </div>
     </div>
 
+    <!--3D modelling-->
     <div class="portfolio-header-div indigo-background-div header-position-right-div">
         Recently, I've started to train 3D modelling
     </div>
@@ -86,23 +109,54 @@
         more about the issue. With Blender and some YouTube tutorials, I have managed to create cool looking objects.
     </div>
 
-    <div parallax-background class="parallax-background modellingCompilation" parallax-ratio="0.3"></div>
 
-    <div class="visible-div">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed posuere interdum sem. Quisque ligula eros
-        ullamcorper quis,
-        lacinia quis facilisis sed sapien. Mauris varius diam vitae arcu. Sed arcu lectus auctor vitae, consectetuer
-        et venenatis eget velit. Sed augue orci, lacinia eu tincidunt et eleifend nec lacus. Donec ultricies nisl ut
-        felis, suspendisse potenti. Lorem ipsum ligula ut hendrerit mollis, ipsum erat vehicula risus, eu suscipit sem
-        libero nec erat. Aliquam erat volutpat. Sed congue augue vitae neque. Nulla consectetuer porttitor pede. Fusce
-        purus morbi tortor magna condimentum vel, placerat id blandit sit amet tortor. Mauris sed libero. Suspendisse
-        facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum
-        maecenas massa turpis sagittis in, interdum non lobortis vitae massa. Quisque purus lectus, posuere eget
-        imperdiet
-        nec sodales id arcu. Vestibulum elit pede dictum eu, viverra non tincidunt eu ligula. Nam molestie nec tortor.
-        Donec placerat leo sit amet velit. Vestibulum id justo ut vitae massa. Proin in dolor mauris consequat aliquam.
-        Donec ipsum, vestibulum ullamcorper venenatis augue.
+    <div parallax-background class="parallax-background modellingCompilation hidden-sm hidden-xs"
+         parallax-ratio="0.3"></div>
+
+    <!--3D modelling mobile-->
+    <div class="mobile-background modellingCompilation visible-xs-block visible-sm-block">
+        <div class="portfolio-text-div">
+            Clinical chemistry sample pre-handling station UI
+        </div>
     </div>
 
+    <div class="portfolio-header-div light-blue-background-div header-position-center-div">
+        Thank you for scrolling.
+    </div>
+
+    <footer class="portfolio-footer blue-gray-background-div ">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+
+                <div class="col-md-6 footer-column-center">
+                    <div class="row">
+                        Ismo Loukusa
+                    </div>
+                    <div class="row">
+                        Tammistontie 4a E32
+                    </div>
+                    <div class="row">
+                        01520 VANTAA
+                    </div>
+                </div>
+
+                <div class="col-md-6 footer-column-center">
+                    <div class="row">
+                        +358 50 535 9027
+                    </div>
+                    <div class="row">
+                        ismo.loukusa[m]gmail.com
+                    </div>
+                    <div class="row">
+                        <a href="https://fi.linkedin.com/pub/ismo-loukusa/1/309/712">
+                            <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_profile_greytxt_80x15.png"
+                                 width="80" height="15" border="0" alt="View Ismo Loukusa's profile on LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
 </div>
-<!--</div>-->

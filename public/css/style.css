@@ -13,12 +13,6 @@ body {
     margin-top: -50px;
 }
 
-.visible-div {
-    font-family: Roboto;
-    font-size: 30px;
-    background-color: white;
-}
-
 .portfolio-header-div {
     font-family: Roboto, sans-serif;
     font-weight: 100;
@@ -57,6 +51,14 @@ body {
     background-color: #1a237e;
 }
 
+.blue-gray-background-div{
+    background-color: #455a64;
+}
+
+.light-blue-background-div {
+    background-color: #039be5;
+}
+
 .white-background-div {
     background-color: white;
 }
@@ -66,16 +68,28 @@ body {
     text-align: right;
 }
 
-.analyzer-caption-div {
+.header-position-center-div {
+    padding: 70px;
+    text-align: center;
+}
+.portfolio-caption-div {
     float: right;
-    margin: 120px 60px 0 0;
+    margin: 0 60px 0 0;
     width: 60px;
     height: 60px;
     background-color: rgba(255, 255, 255, 0.95);
     border: 1px solid #29b6f6;
 }
 
-.analyzer-caption-div span.glyphicon-chevron-left {
+.mobile-caption-div{
+    float: right;
+    margin: 10px 10px 0 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #29b6f6;
+    padding:20px;
+}
+
+.portfolio-caption-div span.glyphicon-chevron-left {
     position: relative;
     left: 17%;
     top: 17%;
@@ -83,12 +97,7 @@ body {
     font-weight: 200;
 }
 
-.stt-caption-div {
-    float: right;
-    margin: 0 60px 0 0;
-}
-
-.stt-caption-div span.glyphicon-chevron-down {
+.portfolio-caption-div span.glyphicon-chevron-down {
     position: relative;
     left: 22%;
     top: 22%;
@@ -115,6 +124,26 @@ body {
     top: 40%;
 }
 
+.mobile-caption-text{
+    font-size: 16px;
+    display: inline;
+}
+
+.portfolio-footer{
+    padding: 70px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: white;
+}
+
+.footer-column-center{
+    /*position: absolute;*/
+    left: 15%;
+    /*margin-top: -50px;*/
+    /*margin-left: -50px;*/
+}
+
 /*CAROUSEL STYLES*/
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -126,6 +155,9 @@ body {
     margin-bottom: -50px;
 }
 
+.glyphicon.carousel-glyph-size{
+    font-size: 90px;
+}
 /*PARALLAX STUFF*/
 .parallax {
     position: absolute;
@@ -135,12 +167,38 @@ body {
 
 .parallax-background {
     background-attachment: fixed;
-    /*background-position: 50% 0;*/
     background-repeat: no-repeat;
     height: 800px;
     width: 100%;
     position: relative;
+    background-size: 100%;
+    background-color: #212121;
+    background-position: center center;
+}
+
+.parallax-iot-background {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+    background-size: auto;
+    position: relative;
+    background-color: #212121;
+    background-position: center center;
+}
+
+.parallax-background-tuska {
     background-size: cover;
+}
+
+.mobile-background{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height:500px;
+    width: 100%;
+    position: relative;
+    background-size: 100%;
+    background-color: #212121;
     background-position: center center;
 }
 
@@ -149,7 +207,7 @@ body {
 }
 
 .sttCompilation {
-    background-image: url(../images/sttCompilation.png);
+    background-image: url(../images/SttCompilation.png);
 }
 
 .modellingCompilation {
@@ -163,7 +221,7 @@ body {
 .tuska-carousel-img-size {
     width: 373px;
     height: 700px;
-    background: no-repeat center top;
+    /*background: no-repeat center top;*/
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
