@@ -1,6 +1,37 @@
-portfolioApp.controller('PortfolioController', function ($scope) {
+portfolioApp.controller('PortfolioController', function ($scope, $location, $anchorScroll) {
 
         Init();
+
+        function Init() {
+
+            // Activate Carousel
+            $("#tuskaCarousel").carousel();
+
+            // Enable Carousel Indicators
+            $(".item1").click(function () {
+                $("#tuskaCarousel").carousel(0);
+            });
+            $(".item2").click(function () {
+                $("#tuskaCarousel").carousel(1);
+            });
+            $(".item3").click(function () {
+                $("#tuskaCarousel").carousel(2);
+            });
+            $(".item4").click(function () {
+                $("#tuskaCarousel").carousel(3);
+            });
+            $(".item5").click(function () {
+                $("#tuskaCarousel").carousel(4);
+            });
+
+            // Enable Carousel Controls
+            $(".left").click(function () {
+                $("#tuskaCarousel").carousel("prev");
+            });
+            $(".right").click(function () {
+                $("#tuskaCarousel").carousel("next");
+            });
+        }
 
         var isAnalyzerCaptionOpen = false;
         var isSttCaptionOpen = false;
@@ -82,40 +113,19 @@ portfolioApp.controller('PortfolioController', function ($scope) {
             }
         };
 
-    $scope.slide = function (dir) {
-        $('#tuskaCarousel').carousel(dir);
-    };
+        $scope.slide = function (dir) {
+            $('#tuskaCarousel').carousel(dir);
+        };
 
-        function Init() {
 
-            // Activate Carousel
-            $("#tuskaCarousel").carousel();
+        $scope.gotoContact = function () {
+            // set the location.hash to the id of
+            // the element you wish to scroll to.
+            $location.hash('contact');
 
-            // Enable Carousel Indicators
-            $(".item1").click(function(){
-                $("#tuskaCarousel").carousel(0);
-            });
-            $(".item2").click(function(){
-                $("#tuskaCarousel").carousel(1);
-            });
-            $(".item3").click(function(){
-                $("#tuskaCarousel").carousel(2);
-            });
-            $(".item4").click(function(){
-                $("#tuskaCarousel").carousel(3);
-            });
-            $(".item5").click(function(){
-                $("#tuskaCarousel").carousel(4);
-            });
-
-            // Enable Carousel Controls
-            $(".left").click(function(){
-                $("#tuskaCarousel").carousel("prev");
-            });
-            $(".right").click(function(){
-                $("#tuskaCarousel").carousel("next");
-            });
-        }
+            // call $anchorScroll()
+            $anchorScroll();
+        };
     }
 );
     
