@@ -36,6 +36,16 @@
     <script src="js/controllers/PortfolioController.js"></script>
     <script src="js/controllers/ProjectsController.js"></script>
 
+    <script>
+        function myFunction() {
+            alert("myFunction");
+        }
+
+        function callControllerScroll(anchorId) {
+            angular.element($("#portfolioTemplate")).scope().scrollToAnchor(anchorId);
+        }
+    </script>
+
 </head>
 
 <body>
@@ -58,9 +68,21 @@
 
             <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#/introduction">Introduction</a></li>
-                    <li><a href="#/projects">Projects</a></li>
-                    <li><a href="#/portfolio">Portfolio</a></li>
+                    <li>
+                        <button class="navi-button hvr-underline-reveal" onclick="callControllerScroll('desktopAnchor')">Desktop</button>
+                    </li>
+                    <li>
+                        <button class="navi-button hvr-underline-reveal" onclick="callControllerScroll('iotAnchor')">IoT</button>
+                    </li>
+                    <li>
+                        <button class="navi-button hvr-underline-reveal" onclick="callControllerScroll('tuskaAnchor')">TUSKA 2012</button>
+                    </li>
+                    <li>
+                        <button class="navi-button hvr-underline-reveal" onclick="callControllerScroll('modellingAnchor')">3d Modelling</button>
+                    </li>
+                    <li>
+                        <button class="navi-button hvr-underline-reveal" onclick="callControllerScroll('contactAnchor')">Contact</button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -71,6 +93,7 @@
 <div>
     <div ng-view></div>
 </div>
+
 
 </body>
 

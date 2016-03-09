@@ -117,15 +117,10 @@ portfolioApp.controller('PortfolioController', function ($scope, $location, $anc
             $('#tuskaCarousel').carousel(dir);
         };
 
-
-        $scope.gotoContact = function () {
-            // set the location.hash to the id of
-            // the element you wish to scroll to.
-            $location.hash('contact');
-
-            // call $anchorScroll()
+        $scope.scrollToAnchor = function (id) {
+            $location.hash(id);
             $anchorScroll();
-        };
+        }
     }
 );
     
